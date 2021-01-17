@@ -1,0 +1,26 @@
+
+USAGE: poc <command>
+
+where <command> is one of:
+    new, log, delete
+
+poc new           create a new account
+
+poc delete <id>   delete the account with id = <id>
+
+poc log           all accounts in creation date order
+poc log -a        all accounts sorted in alphabetic order
+poc log -r        reverse the order   
+
+
+
+OR: poc <keyword>
+
+where <keyword> is what you want to search.
+
+poc <keyword>      accounts by titles matching <keyword>
+poc <keyword> -u   accounts by username matching <keyword>     
+poc <keyword> -e   accounts by email matching <keyword>
+poc <keyword> -a   alphabetic order (default date)
+poc <keyword> -r   reverse order
+
