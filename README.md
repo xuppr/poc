@@ -9,7 +9,7 @@
 Initialize your pocket with a pin for password encryption:
 
 ```
-$ poc new
+$ sudo poc new
 Welcome! This is the first initialization?
 Insert a valid pin (min 5, max 20):
 Confirm pin:
@@ -18,7 +18,7 @@ Confirm pin:
 now you can save your accounts (for every command you'll be asked for the pin):
 
 ```
-$ poc new
+$ sudo poc new
 Insert pin:
 
 title or site: little-poc.com
@@ -49,7 +49,7 @@ $ poc little -v
 delete by account id:
 
 ```
-$ poc delete 1
+$ sudo poc delete 1
 ```
 
 for other info:
