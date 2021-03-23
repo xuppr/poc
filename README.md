@@ -9,7 +9,7 @@
 Initialize your pocket with a pin for password encryption:
 
 ```
-$ sudo poc new
+$ poc new
 Welcome! This is the first initialization?
 Insert a valid pin (min 5, max 20):
 Confirm pin:
