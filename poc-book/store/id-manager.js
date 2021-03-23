@@ -1,6 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const ID_FILE_PATH = path.join(__dirname, 'id.json');
+
+const homeDir = require("os").homedir();
+
+const ID_FILE_PATH = path.join(homeDir, ".poc", "id.json");
 
 function newId() {
   const currentId = getId();

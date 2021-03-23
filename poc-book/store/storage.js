@@ -3,7 +3,9 @@ const path = require("path");
 const idManger = require("./id-manager");
 const cryptography = require("../cryptography/cryptography");
 
-const STORE_FILE_PATH = path.join(__dirname, 'store.json');
+const poc_dir = path.join(require("os").homedir(), ".poc");
+
+const STORE_FILE_PATH = path.join(poc_dir, "store.json");
 
 const keys = {
   TITLE: "title",

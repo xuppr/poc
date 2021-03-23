@@ -1,15 +1,23 @@
 const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
+const homeDir = require("os").homedir();
+
+const idManager = require("../store/id-manager");
+
+const poc_dir = path.join(homeDir, ".poc");
 
 // const PASS_FILE_PATH = path.resolve("cryptography/passphrase.json");
-const PASS_FILE_PATH = path.join(__dirname, 'passphrase.json');
-const TEST_PHRASE = 'hello world';
+const PASS_FILE_PATH = path.join(poc_dir, "passphrase.json");
+const TEST_PHRASE = "hello world";
 const algorithm = "aes-256-ctr";
-
 
 // #### public #####
 function initializePassphrase(pin) {
+  console.log(homeDir);
+
+  fs.mkdirSync(poc_dir);
+  idManager.resetId(0);
   const data = JSON.stringify(encrypt(TEST_PHRASE, pin));
   fs.writeFileSync(PASS_FILE_PATH, data);
 }
