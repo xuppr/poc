@@ -18,7 +18,7 @@ Confirm pin:
 now you can save your accounts (for every command you'll be asked for the pin):
 
 ```
-$ sudo poc new
+$ poc new
 Insert pin:
 
 title or site: little-poc.com
@@ -49,7 +49,7 @@ $ poc little -v
 delete by account id:
 
 ```
-$ sudo poc delete 1
+$ poc delete 1
 ```
 
 for other info:
