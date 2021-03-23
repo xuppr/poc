@@ -10,7 +10,7 @@
     "poc": "./index.js"
   },
   "keywords": [],
-  "author": "Lorenzo Calvello",
+  "author": "Lorenzo Calvello, Nicolas Calvello",
   "license": "MIT",
   "dependencies": {}
 }
