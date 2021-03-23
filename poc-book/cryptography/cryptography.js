@@ -14,8 +14,6 @@ const algorithm = "aes-256-ctr";
 
 // #### public #####
 function initializePassphrase(pin) {
-  console.log(homeDir);
-
   fs.mkdirSync(poc_dir);
   idManager.resetId(0);
   const data = JSON.stringify(encrypt(TEST_PHRASE, pin));
