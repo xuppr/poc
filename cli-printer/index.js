@@ -114,5 +114,8 @@ function error(err) {
     case "no-search-word":
       l("No serch key passed!");
       break;
+    default:
+      l(err);
+      break;
   }
 }
