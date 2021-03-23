@@ -22,5 +22,6 @@ poc <keyword>      accounts by titles matching <keyword>
 poc <keyword> -u   accounts by username matching <keyword>     
 poc <keyword> -e   accounts by email matching <keyword>
 poc <keyword> -a   alphabetic order (default date)
-poc <keyword> -r   reverse order
+poc <keyword> -r   reverse 
+poc <keyword> -v   show verbose, id included
 
